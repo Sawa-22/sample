@@ -8,9 +8,8 @@ public class B9member {
 	
 		public static void main(String []args) {
 		
-			// DBを作るためのコマンドラインをあげる？？
-			System.out.println(); // DBから各年のベストナインを引っ張ってきて出力させる
-			System.out.println( + "年" + "リーグ" + "のベストナイン");
+			// System.out.println(year + "年" + league "リーグ" + "ベストナイン");
+			// System.out.println(); // DBから各年のベストナインを引っ張ってきて出力させる、DBを作るためのコマンドラインをあげる？？
 		}
 }
 
