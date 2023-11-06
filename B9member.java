@@ -7,7 +7,7 @@ public class B9member {
 		public int position;
 		public String name;
 		public String team;
-	
+		// DBを作るためのコマンドラインをあげる？？
 		System.out.println(); // DBから各年のベストナインを引っ張ってきて出力させる
 		System.out.println( + "年" + "リーグ" + "のベストナイン");
 	}
