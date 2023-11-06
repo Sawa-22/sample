@@ -1,5 +1,6 @@
 
 public class B9member {
+	public static void main(String []args) {
 	public int year;
 	public String league;
 	public int position;
