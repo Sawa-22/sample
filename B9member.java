@@ -1,14 +1,15 @@
 
 public class B9member {
-	public int year;
-	public String league;
-	public int position;
-	public String name;
-	public String team;
+	public static void main(String[]args) {
+		int[] years = {2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023};
+		String[] league = {"セントラル", "パシフィック"};
+		String[] position = {"P", "C", "1B", "2B", "3B", "SS", "OF1", "OF2", "OF3", "DH"}; // LF, CF, RF
+		String name;
+		String[] team = {"Giants", "Tigers", "Dragons", "Swallows", "Carp", "BayStars", "Hawks", "Lions", "Baffaloes", "Fighters", "Marines", "Eagles"};
 	
 		public static void main(String []args) {
 		
-			// System.out.println(year + "年" + league "リーグ" + "ベストナイン");
+			// System.out.print(year + "年" + league "リーグ" + "ベストナイン");
 			// System.out.println(); // DBから各年のベストナインを引っ張ってきて出力させる、DBを作るためのコマンドラインをあげる？？
 		}
 }
