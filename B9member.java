@@ -9,7 +9,7 @@ public class B9member {
 		String[] team = {"Giants", "Tigers", "Dragons", "Swallows", "Carp", "BayStars", "Hawks", "Lions", "Baffaloes", "Fighters", "Marines", "Eagles"};
 	
 		public static void main(String []args) {
-		
+			// データ表示のためのメインメソッド
 			// System.out.print(year + "年" + league "リーグ" + "ベストナイン");
 			// System.out.println(); // DBから各年のベストナインを引っ張ってきて出力させる、DBを作るためのコマンドラインをあげる？？
 		}
