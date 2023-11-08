@@ -13,9 +13,10 @@ public class B9member {
 			// System.out.print(year + "年" + league "リーグ" + "ベストナイン");
 			// System.out.println(); // DBから各年のベストナインを引っ張ってきて出力させる、DBを作るためのコマンドラインをあげる？？
 		}
-}
 
-//データベースに接続するメソッド↓
-//private static String getSqlite3Path(){
-//    return System.getProperty("user.dir") + File.separator + "sql" + File.separator + "juku.sqlite3";
-//}
+		//データベースに接続するメソッド
+		private static String getSqlite3Path(){
+    			return System.getProperty("user.dir") + File.separator + "sql" + File.separator + "juku.sqlite3";
+		}
+	}
+}
