@@ -45,34 +45,36 @@ public class mybestnine {
 	}
 	
 	// DB接続メソッド
-	private static String getSqlite3Path(){
+	public static String getSqlite3Path(){
 		    return System.getProperty("user.dir") + File.separator + "sql" + File.separator + "juku.sqlite3";
 	}
 
 	
 	// テーブル取得メソッド
-	public static List<mybestnine> fetchB9member() {
+	public static List<mybestnine> fetchmyb9() {
 		List<mybestnine> rows = new ArrayList<mybestnine>();
 		
 		try {
-			Connection connection = DriverManager.getConnection("jdbc:sqlite://localhost/mybestnine"()); //getSqlite3Path()
+			// SQlに接続
+			Connection connection = DriveManager.getConnection("jdbc:sqlite:" + getSqlite3Path());
+			// SQL文をDBに送るためのStatementオブジェクトを生成
 			Statement createStatement = connection.createStatement();
-			ResultSet resultSet = createStatement.executeQuery("select * from mybestnine;"); //getSqlite3Path()
+			// ステートメントを作成したらSQL文を作成しDBに問い合わせを行う
+			ResultSet resultSet = createStatement.executeQuery("select * from myb9;");
 			
 			while (resultSet.next()) {
-				int year = resultSet.getInt("year");
-				String name = resultSet.getString("league");
+				// int year = resultSet.getInt("year");
+				// String name = resultSet.getString("league");
 				String position = resultSet.getString("position");
 				String name1 = resultSet.getString("name"); //なぜname1??
 				String team = resultSet.getString("team");
 				
-				mybestnine row = new mybestnine(0, null, null, null, null);
+				mybestnine row = new mybestnine(0, null, null, null, null); // ??
 				rows.add(row);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
 		return rows;
 	}
 }
