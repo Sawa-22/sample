@@ -58,7 +58,7 @@ public class mybestnine {
 			// SQlに接続
 			Connection connection = DriveManager.getConnection("jdbc:sqlite:" + getSqlite3Path());
 			// SQL文をDBに送るためのStatementオブジェクトを生成
-			Statement createStatement = connection.createStatement();
+			Statement createStatement = null; //connection.createStatement(); // 必要なクラス（パッケージをインポートしていないため…
 			// ステートメントを作成したらSQL文を作成しDBに問い合わせを行う
 			ResultSet resultSet = createStatement.executeQuery("select * from myb9;");
 			
@@ -66,7 +66,7 @@ public class mybestnine {
 				// int year = resultSet.getInt("year");
 				// String name = resultSet.getString("league");
 				String position = resultSet.getString("position");
-				String name1 = resultSet.getString("name"); //なぜname1??
+				String name = resultSet.getString("name");
 				String team = resultSet.getString("team");
 				
 				mybestnine row = new mybestnine(0, null, null, null, null); // ??
@@ -75,6 +75,7 @@ public class mybestnine {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		
 		return rows;
 	}
 }
