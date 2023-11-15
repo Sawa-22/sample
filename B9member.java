@@ -27,8 +27,26 @@ public class mybestnine {
 		System.out.println("CF" + "近本光司" + "T ");
 		System.out.println("RF" + "岡林勇希" + "D ");
 		}
-		
+
+		{
+		System.out.println("C " + "該当者なし" + "該当球団なし");
+		System.out.println("1B" + "● ● ● ● " + "L ");
+		System.out.println("2B" + "浅村栄斗" + "E ");
+		System.out.println("3B" + "宗佑磨　" + "Bs");
+		System.out.println("SS" + "今宮健太" + "H ");
+		System.out.println("LF" + "島内宏明" + "E ");
+		System.out.println("CF" + "松本剛　" + "F ");
+		System.out.println("RF" + "柳田悠岐" + "H ");
+		System.out.println("DH" + "吉田正尚" + "Bs");
+		}
+
+		//配列で管理した方が楽
 		//String position;
         	//String name;
 		//String team;
+		//float Ave.
+		//byte HR
+		//short RBI
+		//byte SB
+		
 }
